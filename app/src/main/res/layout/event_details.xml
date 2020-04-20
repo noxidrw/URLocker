@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="149dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_urlocker2_round" />
+
+    <TextView
+        android:id="@+id/ed_event_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sample Filter"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/ed_event_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sample URL"
+        app:layout_constraintStart_toStartOf="@+id/ed_event_filter"
+        app:layout_constraintTop_toBottomOf="@+id/ed_event_filter" />
+
+    <Button
+        android:id="@+id/ed_launch_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/entry_launch"
+        app:layout_constraintStart_toStartOf="@+id/ed_event_url"
+        app:layout_constraintTop_toBottomOf="@+id/ed_event_url" />
+
+    <Button
+        android:id="@+id/ed_remove_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/entry_remove"
+        app:layout_constraintStart_toEndOf="@+id/ed_launch_url"
+        app:layout_constraintTop_toTopOf="@+id/ed_launch_url" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/entry_edit"
+        app:layout_constraintStart_toEndOf="@+id/ed_remove_item"
+        app:layout_constraintTop_toTopOf="@+id/ed_remove_item" />
+</androidx.constraintlayout.widget.ConstraintLayout>
